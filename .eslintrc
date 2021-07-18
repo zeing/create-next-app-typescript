@@ -1,24 +1,12 @@
 {
   "env": {
-    "node": 1,
-    "browser": 1,
-    "es6": true,
-    "commonjs": true
+    "commonjs": true,
+    "browser": true,
+    "es2021": true,
+    "node": true
   },
-  "plugins": ["react"],
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
-    "plugin:prettier/recommended"
-  ],
-  "parser": "babel-eslint",
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true,
-      "modules": true
-    }
-  },
+  "parser": "@typescript-eslint/parser",
+  "extends": ["next", "plugin:prettier/recommended"],
   "rules": {
     "no-unused-vars": "warn",
     "react/prefer-stateless-function": 0,
@@ -32,7 +20,8 @@
     "react/react-in-jsx-scope": "off",
     "no-nested-ternary": 0,
     "react/no-unescaped-entities": 0,
-    "react/display-name": "off"
+    "react/display-name": "off",
+    "@next/next/no-img-element": "off"
   },
   "globals": {
     "grecaptcha": "readonly"
