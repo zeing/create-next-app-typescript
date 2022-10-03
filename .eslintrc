@@ -6,7 +6,7 @@
     "node": true
   },
   "parser": "@typescript-eslint/parser",
-  "extends": ["next", "plugin:prettier/recommended"],
+  "extends": ["next/core-web-vitals", "prettier"],
   "rules": {
     "no-unused-vars": "warn",
     "react/prefer-stateless-function": 0,
