@@ -12,7 +12,7 @@ export default function Home() {
         <h1 className="text-4xl font-bold">
           Welcome to{' '}
           <a href="https://nextjs.org" className="text-blue-500">
-            Next.js! With Tailwind class
+            Next.js! With Tailwind css
           </a>
         </h1>
 
