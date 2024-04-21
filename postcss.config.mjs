@@ -1,5 +1,5 @@
-'use strict'
-module.exports = {
+/** @type {import('postcss-load-config').Config} */
+const config = {
   plugins: {
     tailwindcss: {},
     'postcss-nested': {},
@@ -8,3 +8,6 @@ module.exports = {
     autoprefixer: {},
   },
 }
+
+
+export default config;
